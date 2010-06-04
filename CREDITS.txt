@@ -1,0 +1,3 @@
+Thanks go to the following people for patches and contributions:
+
+* Robert Chady - Project Maintainer

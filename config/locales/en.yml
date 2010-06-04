@@ -1,0 +1,5 @@
+en:
+  auto_watchers_options: "Options"
+  auto_watchers_enable_watchers_label: "Enable watchers"
+  auto_watchers_enable_watchers_help: "Automatically add anyone assigned to an issue as a watcher."
+

@@ -1,0 +1,8 @@
+<fieldset>
+  <%= content_tag(:legend, l(:auto_watchers_options)) %>
+  <%= content_tag(:p, l(:auto_watchers_enable_watchers_help)) %>
+  <%= content_tag(:p,
+    content_tag(:label, l(:auto_watchers_enable_watchers_label) +
+    check_box_tag('settings[enable_watchers]',
+    @settings['enable_watchers'], @settings['enable_watchers'] == 'on' ))) %>
+</fieldset>
