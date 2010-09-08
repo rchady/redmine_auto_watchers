@@ -1,0 +1,23 @@
+= Automatic Watchers
+
+Automatic watchers is a Redmine plugin that automatically adds users that touch an issue as watchers of that issue.
+
+== Features
+
+Provides an option to enable/disable the automatic watcher adding feature without having to uninstall the plugin.
+
+== Getting the plugin
+
+A copy of the plugin can be downloaded from {GitHub}[http://github.com/rchady/redmine_auto_watchers].
+
+== Installation and Setup
+
+1. Follow the Redmine plugin installation steps at the {Redmine Wiki}[http://www.redmine.org/wiki/redmine/Plugins].
+2. Restart your Redmine web servers (e.g. mongrel, thin, mod_rails)
+3. Log in as an Administrator and verify the plugin is enabled at Administration / Plugins / redmine_auto_watchers.
+
+== Plugin help
+
+If you need help you can contact the maintainer at http://github.com/rchady.
+
+
