@@ -12,7 +12,7 @@ class AutoWatchersIssuesControllerHook < Redmine::Hook::ViewListener
       issue = context[:issue]
       # Add the person the ticket is assigned to if it is assigned to
       # someone and they are addable.
-      if !issue.assigned_to.blank? and 
+      if !issue.assigned_to.blank? and
          issue.addable_watcher_users.include?(issue.assigned_to)
           issue.add_watcher(issue.assigned_to)
       end
@@ -21,7 +21,9 @@ class AutoWatchersIssuesControllerHook < Redmine::Hook::ViewListener
         current_issue = Issue.find issue.id
         if !current_issue.assigned_to.blank? and
            issue.addable_watcher_users.include?(current_issue.assigned_to)
+          unless issue.watchers.any? { |i| i.user_id == current_issue.assigned_to.id }
             issue.add_watcher(current_issue.assigned_to)
+          end
         end
       end
       # Add the current user if they are addable
