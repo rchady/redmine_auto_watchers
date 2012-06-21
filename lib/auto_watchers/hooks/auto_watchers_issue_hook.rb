@@ -27,7 +27,7 @@ class AutoWatchersIssuesControllerHook < Redmine::Hook::ViewListener
         end
       end
       # Add the current user if they are addable
-      issue.add_watcher(User.current) if issue.addable_watcher_users.include?(User.current.id)
+      issue.add_watcher(User.current) if issue.addable_watcher_users.include?(User.current)
     end
   end
 
