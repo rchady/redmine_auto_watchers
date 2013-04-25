@@ -1,0 +1,5 @@
+ru:
+  auto_watchers_options: "Опции"
+  auto_watchers_enable_watchers_label: "Включить авто наблюдателей"
+  auto_watchers_enable_watchers_help: "Automatically add anyone assigned to an issue as a watcher."
+
